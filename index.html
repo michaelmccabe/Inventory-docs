@@ -296,8 +296,25 @@ cd Inventory-frontend</code></pre>
 
         <img src="https://raw.githubusercontent.com/michaelmccabe/Inventory-backend/main/local-dev/jaeger-trace.png" alt="Jaeger Trace Preview" class="preview-image">
         
-
+        
         <hr>
+
+        <h2>Logging</h2>
+
+        <h3>Viewing Logs in Grafana</h3>
+        <p>To view logs from the Inventory Service:</p>
+     
+        <ol>
+            <li>Access Grafana UI at  <a href="http://localhost:3001">http://localhost:3001</a> (default username/password: admin/admin).</li>
+            <li> Go to Configuration (gear icon) ->  <strong>Data Sources</strong>  ->  <strong>Add data source</strong> </li>
+            <li>Set the URL to <code>http://loki:3100</code> and click <strong>Save & Test</strong></li>
+        </ol>
+
+        <p>These logs can be filtered easily by log level, trace-id etc.</p>
+
+        <img src=" https://github.com/michaelmccabe/Inventory-backend/blob/main/local-dev/grafana-search.png" alt="Grafana Preview" class="preview-image">
+        
+        <hr>        
 
         <h2>Quick Reference</h2>
         <table>
